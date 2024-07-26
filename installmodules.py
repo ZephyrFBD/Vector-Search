@@ -36,10 +36,18 @@ packages = [
     "datasets==2.20.0",
     "gensim==4.3.2",
     "smart-open==7.0.4",
-    "scipy==1.12",
+    "scipy==1.12.0",
     "matplotlib==3.9.0",
-    "pandas==2.2.2"
+    "pandas==2.2.2",
+    "fitz==0.0.1.dev2",  # PyMuPDF
+    "Pillow==10.3.0",  # PIL
+    "pytesseract==0.3.10",
+    "tqdm==4.66.4",
+    "nltk==3.8.1",
+    "sentence-transformers==3.0.1",
+    "scikit-learn==1.5.1",
 ]
+
 
 def check_and_install_packages(packages):
     installed_packages = {pkg.key: pkg.version for pkg in pkg_resources.working_set}
